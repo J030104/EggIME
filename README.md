@@ -4,9 +4,13 @@
 
 ## 下載
 
-請至 [Releases](https://github.com/J030104/EggIME/releases) 下載 **v0.1.0-alpha.1** 的 `EggIME-0.1.0-alpha.1-macOS-arm64.zip`，並以同頁的 `SHA256SUMS.txt` 核對下載檔案。GitHub 自動產生的 Source code ZIP 僅包含此發佈頁面的文件，並非可建置的應用程式原始碼。
+請至 [Releases](https://github.com/J030104/EggIME/releases) 下載 **v0.1.0-alpha.2** 的 `EggIME-0.1.0-alpha.2-macOS-arm64.zip`，並以同頁的 `SHA256SUMS.txt` 核對下載檔案。GitHub 自動產生的 Source code ZIP 僅包含此發佈頁面的文件，並非可建置的應用程式原始碼。
 
 此測試包基於應用程式版本 **0.1.0 / build 2026110211**，提供 Apple silicon 成品。隨附本機 AI runtime 需要 **macOS 26 以上**；Intel 與較舊系統未驗證。程式使用本機 ad-hoc 簽章，**沒有 Apple Developer ID 簽章或 Apple 公證**，macOS 可能阻擋開啟。
+
+## 本次更新
+
+v0.1.0-alpha.2 調整輸入來源選單 Logo：黃色方塊加寬、縮小「蛋」字並增加留白，比例參照 macOS 系統輸入法。沿用 alpha.1 的輸入核心與模型；本次驗證圖示尺寸、應用程式簽章及安裝包完整性，未重跑完整原生輸入驗收。若更新後仍顯示舊圖示，可重新登入後確認。
 
 ## 安裝與試用
 
