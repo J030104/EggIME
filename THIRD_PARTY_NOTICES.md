@@ -5,6 +5,7 @@ The application bundle includes complete license and attribution files under `Eg
 | Component | Source | License / attribution |
 | --- | --- | --- |
 | Chinese engine and dictionary data | [McBopomofo](https://github.com/openvanilla/McBopomofo/tree/18e2060dd5d0b511753ad79a8fe0d112e944f1af) | MIT and included libtabe notices |
+| Supplemental Traditional Chinese mappings | [OpenCC 1.1.9](https://github.com/BYVoid/OpenCC/tree/ver.1.1.9/data/dictionary) | Apache-2.0; filtered character mappings derived from STCharacters.txt and TWVariants.txt |
 | English frequency dictionary | [wordfreq 3.1.1](https://github.com/rspeer/wordfreq), macOS/FreeBSD web2 | Derived frequency data CC BY-SA 4.0; Robyn Speer and corpus contributors credited in bundled NOTICE |
 | Local language model | [Qwen2.5-0.5B 4-bit MLX](https://huggingface.co/mlx-community/Qwen2.5-0.5B-4bit/tree/8b4323d7cf06a376179d6eb5358ed1c66902529a) | Apache-2.0; bundled model and dependency notices |
 | Python runtime | [python-build-standalone](https://github.com/astral-sh/python-build-standalone/releases/tag/20260623) | Python and bundled third-party notices |
