@@ -26,7 +26,7 @@
 
 ## 快速安裝
 
-1. 從 [GitHub Releases](https://github.com/J030104/EggIME/releases/latest) 下載 `EggIME-1.0.2-macOS-arm64.zip` 與 `SHA256SUMS.txt`。
+1. 從 [GitHub Releases](https://github.com/J030104/EggIME/releases/latest) 下載 `EggIME-1.0.2-build.2026112403-macOS-arm64.zip` 與 `SHA256SUMS.txt`。
 2. 核對 SHA-256 並解壓縮。若正在使用舊版蛋注音，先切換到其他輸入法並結束蛋注音。
 3. 在 Finder 按兩下解壓縮資料夾內的 `install.command`。更新時會備份舊版 App。
 4. 從輸入來源選單選「蛋注音」。若尚未出現，重新登入，再到「系統設定 → 鍵盤 → 輸入方式」加入。
@@ -76,7 +76,7 @@ open EggIME.app --args --demo
 
 ## 版本與已知問題
 
-**v1.0.2** 修正英文縮寫的組字。直接打 `it's` 會保留英文 s。一般句號、逗號、問號和驚嘆號依游標前的語言採用英文或中文標點。 [版本說明與下載](https://github.com/J030104/EggIME/releases/tag/v1.0.2)
+**v1.0.2（build 2026112403）** 直接打問號會顯示半形與全形兩個選項，依游標前的語言預選；使用預設選字鍵按 2 可換另一種。直接打逗號再按空白可以輸入半形逗號和一個空格。修正英文縮寫的組字。直接打 `it's` 會保留英文 s。一般句號、逗號、問號和驚嘆號依游標前的語言採用英文或中文標點。 [版本說明與下載](https://github.com/J030104/EggIME/releases/tag/v1.0.2-build.2026112403)
 
 **v1.0.1** 修正「大概」「膽敢」「質感」等詞與科學記號撞鍵，以及錯鍵後無法繼續輸入中文的情況。全形逗號及句號各自採用 macOS 26.6.2 繁體注音的候選順序。 [版本說明與下載](https://github.com/J030104/EggIME/releases/tag/v1.0.1)
 
@@ -87,7 +87,7 @@ open EggIME.app --args --demo
 <details>
 <summary><strong>這版驗證了哪些項目？</strong></summary>
 
-build `2026112402` 的自動化測試涵蓋英文縮寫、游標前的語言與四種常用標點，也涵蓋錯鍵後的連續組字、科學記號、中英混打，以及逗號和句號的每個選字鍵。已核對 ZIP 完整性、SHA-256、解壓後的 App 簽章及成品自我檢查。自我檢查確認詞庫、模型檔與混打核心，完整的模型推論與各 App 原生輸入仍需另外驗證。
+build `2026112403` 的自動化測試涵蓋英文縮寫、游標前的語言與四種常用標點，也涵蓋錯鍵後的連續組字、科學記號、中英混打，以及逗號和句號的每個選字鍵。已核對 ZIP 完整性、SHA-256、解壓後的 App 簽章及成品自我檢查。自我檢查確認詞庫、模型檔與混打核心，完整的模型推論與各 App 原生輸入仍需另外驗證。
 
 </details>
 
