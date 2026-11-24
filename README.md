@@ -4,7 +4,7 @@
   <p><strong>在 Mac 上，一句話裡就能打注音和英文。</strong></p>
   <p>大千注音・繁體優先・英文 Tab 補全</p>
   <p>
-    <a href="https://github.com/J030104/EggIME/releases/latest"><strong>下載蛋注音 v1.0.0</strong></a>
+    <a href="https://github.com/J030104/EggIME/releases/latest"><strong>下載蛋注音 v1.0.1</strong></a>
     · <a href="#快速安裝">安裝指南</a>
     · <a href="#日常操作">日常操作</a>
     · <a href="#版本與已知問題">版本與已知問題</a>
@@ -20,13 +20,13 @@
 | --- | --- |
 | **用大千注音打繁體** | 輸入 `su3cl3`，按 <kbd>Enter</kbd> 送出「你好」。 |
 | **在同一句接著打英文** | 中文組字後接著輸入英文。英文部分按 <kbd>Tab</kbd> 接受第一個補全，整句按 <kbd>Enter</kbd> 送出。 |
-| **把逗號改成頓號** | 組字時按 <kbd>Shift</kbd> + <kbd>,</kbd> 輸入「，」，再按 <kbd>↓</kbd> 選「、」。 |
+| **選標點** | 組字時按 <kbd>Shift</kbd> + <kbd>,</kbd> 或 <kbd>.</kbd> 輸入全形逗號或句號，再按 <kbd>↓</kbd>。用預設選字鍵按 <kbd>2</kbd> 可選「、」或「⋯⋯」，按 <kbd>3</kbd> 可選全形空格。 |
 
 候選與送出的文字預設為繁體。中英交界與英文補全後的自動空格預設關閉，可在偏好設定各自開啟。
 
 ## 快速安裝
 
-1. 從 [GitHub Releases](https://github.com/J030104/EggIME/releases/latest) 下載 `EggIME-1.0.0-macOS-arm64.zip` 與 `SHA256SUMS.txt`。
+1. 從 [GitHub Releases](https://github.com/J030104/EggIME/releases/latest) 下載 `EggIME-1.0.1-macOS-arm64.zip` 與 `SHA256SUMS.txt`。
 2. 核對 SHA-256 並解壓縮。若正在使用舊版蛋注音，先切換到其他輸入法並結束蛋注音。
 3. 在 Finder 按兩下解壓縮資料夾內的 `install.command`。更新時會備份舊版 App。
 4. 從輸入來源選單選「蛋注音」。若尚未出現，重新登入，再到「系統設定 → 鍵盤 → 輸入方式」加入。
@@ -76,7 +76,7 @@ open EggIME.app --args --demo
 
 ## 版本與已知問題
 
-**v1.0.0** 是第一個正式版，延續 alpha.5 的中英混打和標點候選。安裝包含中英文詞庫、繁體補充字表與本機 AI 執行環境。 [版本說明與下載](https://github.com/J030104/EggIME/releases/tag/v1.0.0)
+**v1.0.1** 修正「大概」「膽敢」「質感」等詞與科學記號撞鍵，以及錯鍵後無法繼續輸入中文的情況。全形逗號及句號各自採用 macOS 26.6.2 繁體注音的候選順序。 [版本說明與下載](https://github.com/J030104/EggIME/releases/tag/v1.0.1)
 
 - **ChatGPT 英文送出**：曾回報按 Enter 後英文偶發消失，目前仍未重現，原因待查。
 - **首次切換輸入來源**：曾出現首輪按鍵直接送出英文字母，仍待調查。
@@ -85,7 +85,7 @@ open EggIME.app --args --demo
 <details>
 <summary><strong>這版驗證了哪些項目？</strong></summary>
 
-build `2026111901` 通過 118 項自動化測試，涵蓋混打、標點候選替換與取消，以及 30 組英文送出相關情境。已核對 ZIP 完整性、SHA-256、解壓後的 App 簽章及成品自我檢查。自我檢查確認詞庫、模型檔與混打核心，完整的模型推論與各 App 原生輸入仍需另外驗證。
+build `2026112401` 的自動化測試涵蓋錯鍵後的連續組字、科學記號、中英混打，以及逗號和句號的每個選字鍵。已核對 ZIP 完整性、SHA-256、解壓後的 App 簽章及成品自我檢查。自我檢查確認詞庫、模型檔與混打核心，完整的模型推論與各 App 原生輸入仍需另外驗證。
 
 </details>
 
